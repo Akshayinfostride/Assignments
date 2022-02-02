@@ -13,7 +13,7 @@ public class Aryreplace
     }
     public void check() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please enter the string: ");
+        System.out.println("Enter the bad word: ");
         String s1 = sc.nextLine();
         for(String e : collection) {
             s1=s1.replace(e, "***");
