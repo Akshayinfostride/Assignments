@@ -1,0 +1,133 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 16,
+        "name": "chech the add user and delete a user functionality with valid credentails",
+        "description": "",
+        "id": "chechking-add-suer-functionality-of-application;chech-the-add-user-and-delete-a-user-functionality-with-valid-credentails;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11800014500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Login Page is Open now",
+            "match": {
+              "location": "Login.Launch()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 261680301,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enter the \"Admin\" into username field and \"admin123\" into password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 16
+                },
+                {
+                  "val": "admin123",
+                  "offset": 48
+                }
+              ],
+              "location": "Login.enterUserNameAndPassWord(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5180620099,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Click on login",
+            "match": {
+              "location": "Login.clickOnLoginbutton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6492599,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Homepage",
+            "match": {
+              "location": "Login.verifyTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6125256900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user click on Add user",
+            "match": {
+              "location": "Login.clickOnAddUserButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2129306400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user fill \"John Smith\" and username and \"Bright@123\" and confirm pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Smith",
+                  "offset": 11
+                },
+                {
+                  "val": "Bright@123",
+                  "offset": 41
+                }
+              ],
+              "location": "Login.addUserDetails(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14706724900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user delelete button by current \"Dark\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dark",
+                  "offset": 33
+                }
+              ],
+              "location": "Login.deleteUserByUserName(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "chechking add suer functionality of application",
+    "description": "",
+    "id": "chechking-add-suer-functionality-of-application",
+    "keyword": "Feature",
+    "uri": "C:/Users/AkshayBhatia/Projects/Assignments/src/main/java/CucumberBDD/src/test/java/featureFiles/Adduser.feature",
+    "tags": []
+  }
+]
